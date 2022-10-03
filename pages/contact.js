@@ -25,10 +25,10 @@ export default function Contact() {
   
   return (
     <Layout title="Contact">
-      <form onSubmit={registerUser}>
+      {/* <form onSubmit={registerUser}> */}
         <div className="w-full md:w-96c mx-auto my-10 px-10">
           <div className="p-6 border border-gray-300 sm:rounded-md lg:w-96">
-            {/* <form method="POST" action="../contact.php"> */}
+            <form method="POST" action="../contact.php">
               <label className="block mb-6">
                 <span className="text-gray-700">お名前</span>
                 <input
@@ -112,10 +112,10 @@ export default function Contact() {
                   送信
                 </button>
               </div>
-            {/* </form> */}
+            </form>
           </div>
         </div>
-      </form>
+      {/* </form> */}
     </Layout>
   );
 }
